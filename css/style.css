@@ -63,7 +63,7 @@ header {
 
 
 /* ナビゲーションタブレット版 */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .header__nav-ul {
     display: none;
   }  
@@ -77,12 +77,8 @@ header {
   
 
 /* ナビゲーションスマホ版 */
-@media (max-width: 480px) {
-  .header__nav-list {
-    list-style: none;
-    display: inline-block;
-    margin-right: 10px;
-  }
+@media screen and (max-width: 480px) {
+
 }
 
 
@@ -129,6 +125,18 @@ header {
   padding: 0 auto 0 0;
 
 }
+
+@media screen and (max-width: 768px){
+  .topics__card__content-ttl, .topics__card__content-txt{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px){
+
+}
+
+
 
 .topics__card__content-txt {
   font-size: 22px;
